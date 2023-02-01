@@ -1,6 +1,7 @@
 # A recursive, memoized implementation of the series A111133
 
 Implementation based on the series "Number of partitions of n into at least two distinct parts." http://oeis.org/A111133
+Base code is from my brother's coding challenge he did, this repo is an optimization in Java for larger number computations due to the original codes rather large space complexity.
 
 ### Mathematical definition
 
