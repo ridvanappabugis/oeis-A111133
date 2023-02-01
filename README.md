@@ -28,9 +28,10 @@ The computed numbers as recursion is computed, grow exponentially, as it can be 
 For only n>150, the numbers grow exponential, making them not fit the 'long' primitive even as soon as for ~ n=800, introducing the need for dynamic integers such as BigInteger and Huldra's BigInt (https://github.com/bwakell/Huldra), which is used here with minimal changes for more optimised additions and space consumptions.
 
 Effectively, we have an optimal compute time complexity, but the tradeof is the exponentially increasing space complexity. 
-Java's util libraries for collection and number objects do not really do us a favor when the problem is space complexity, because of that, Huldra's BigInt and Carrotsearch's HPPC library for primitive-backed maps where used for the memoization.
+Java's util libraries for collection and number objects do not really do us a favor when the problem is space complexity (time has more priority than space), because of that, Huldra's BigInt and Carrotsearch's HPPC library for primitive-backed maps and small-footprint BigIntegers where used for the memoization data.
 
 Even with this, the HeapSize tends to grow to GBs for larger numbers - due to the need to cache each and every (𝑛,𝑘) combination.
+This is one of the type of computations that perfectly illustrate the notion - "for large data, each byte is important". 
 
 <img width="393" alt="Screenshot 2023-02-01 at 21 40 52" src="https://user-images.githubusercontent.com/37189321/216158639-0796bf6e-d95c-4658-a01c-c267c8ef66b0.png"> <img width="600" alt="Screenshot 2023-02-01 at 21 40 59" src="https://user-images.githubusercontent.com/37189321/216158660-c82bbc7b-a124-4267-a768-a0054d7af1b1.png">
 
