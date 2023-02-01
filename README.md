@@ -37,7 +37,7 @@ Examples above - space consumption for n=100k, which produces the following numb
 
 With numbers as these, cached for each (𝑛,𝑘), the space requirements grow exponentially. There should exist a (𝑛,𝑘)-eviction formula for subsequent 𝑘  iterations, due to the nature the series converges to 0.
 
-Of course, there are optimization mechanisms to handle both stack-size, heap-size and gc performance, but this is just an interesting thought/coding optimization experiment based on my brother's own-implementation for a coding challenge.
+Of course, there are optimization mechanisms to handle both stack-size, heap-size and gc performance, but this is just an interesting small-tweaking-to-run thought-optimization experiment based on my brother's own-implementation of this algorithm for a coding challenge.
 
 
 ### Hot to Run
