@@ -43,7 +43,8 @@ Of course, there are optimization mechanisms to handle both stack-size, heap-siz
 ### Hot to Run
 Requires:
 - Java 8
-- Maven
+- Maven (for Java 8)
+I always recomend Jenv(with mvn plugin) for both maven and java.
 
 Build `jar` with `mvn clean install`. 
 
