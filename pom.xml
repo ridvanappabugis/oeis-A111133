@@ -40,7 +40,7 @@
               </descriptorRefs>
               <archive>
                 <manifest>
-                  <mainClass>com.test.rec.GenerateNumbers</mainClass>
+                  <mainClass>algo.GenerateNumbers</mainClass>
                 </manifest>
               </archive>
             </configuration>

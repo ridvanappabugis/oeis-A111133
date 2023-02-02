@@ -1,11 +1,11 @@
-package com.test.rec;
+package algo;
 
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
+import algo.bigint.BigInt;
 import com.carrotsearch.hppc.IntObjectHashMap;
 import com.carrotsearch.hppc.ShortObjectHashMap;
-import com.test.rec.bigint.BigInt;
 
 import static java.lang.Math.sqrt;
 
@@ -35,11 +35,11 @@ public class GenerateNumbers {
     static BigInt add(final BigInt a, final BigInt b) {
         if (a.isZero() && b.isZero()) {
             return ZERO_BIG;
-        } else if (a.isZero() && b.isOne() || a.isOne() && b.isZero()) {
+        } else if (a.isZero() && b == ONE_BIG || a == ONE_BIG && b.isZero()) {
             return ONE_BIG;
         }
 
-        return a.newAdd(b);
+        return a.copyAdd(b);
     }
 
     public static void main(String[] args) {
